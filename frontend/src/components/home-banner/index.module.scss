@@ -1,0 +1,41 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 780px;
+  border-radius: 12px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 8px 0 0;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

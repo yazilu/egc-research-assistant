@@ -1,0 +1,20 @@
+.mix-design-form {
+  :global {
+    .ant-collapse-header {
+      font-weight: 600;
+    }
+  }
+}
+
+.form-tip {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.submit-area {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}

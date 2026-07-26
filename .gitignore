@@ -1,0 +1,41 @@
+# Secrets and machine-local settings
+.env
+.env.*
+!.env.example
+!.env.docker.example
+*.key
+*.pem
+*.p12
+*.crt
+.claude/
+tools/docker-compose.tunnel-token.yml
+
+# Dependencies and caches
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build output and logs
+dist/
+build/
+*.log
+*.out.log
+*.err.log
+.DS_Store
+
+# Runtime uploads and generated data
+backend/app/service/core/storage/file/
+backend/app/service/core/storage/tmp/
+backend/test_data/
+
+# Large local runtime assets (download/install separately)
+backend/nltk_data/
+backend/app/service/core/rag/res/deepdoc/*.onnx
+backend/app/service/core/rag/res/deepdoc/*.model
+backend/app/service/core/rag/res/huqie.txt.trie
+tools/bin/

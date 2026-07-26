@@ -1,0 +1,106 @@
+.list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.15s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+
+    .deleteBtn {
+      opacity: 1;
+    }
+  }
+
+  &.active {
+    background-color: #e8e8ff;
+    .name {
+      color: #4f46e5;
+    }
+  }
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+}
+
+.deleteBtn {
+  opacity: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  color: #999;
+  transition: opacity 0.15s, background-color 0.15s, color 0.15s;
+
+  &:hover {
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+}
+
+.name {
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time {
+  font-size: 11px;
+  color: #999;
+}
+
+.empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  padding: 20px;
+
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+.hint {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #bbb;
+}
+
+.loading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 13px;
+}
